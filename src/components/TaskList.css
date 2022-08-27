@@ -1,4 +1,25 @@
-.TaskList{
+.TaskListToDo{
+    
+    min-height: 30vh;
+    
+    text-align: center;
+    font-size: 20px;
+}
+.TaskListDone{
+    min-height: 30vh;
+   
+    text-align: center;
+    font-size: 20px;
+}
+.ToDo{
+    font-size: 15px;
+}
+.Done{
+    font-size: 15px;
+}
+
+
+/* .TaskList{
     display: flex;
     flex-wrap: nowrap;
     min-width: 1300px; 
@@ -11,7 +32,7 @@
     flex-basis: 46%;
     text-align:center;
     border-right: solid 1px;
-    /* background-color: lightgreen;   */  
+  
     min-height: 50px;
 }
 
@@ -20,21 +41,19 @@
     text-align: center;
     min-height: 50px;
     
-    /* background-color: blanchedalmond; */
+    
+}
+
+.toDo{
+    min-height: 50vh;
+    background-color: red;
 }
 
 @media screen and (max-width:1280px) {
    .TaskList{
     min-width: 1100px;
    }
-   /* .activeTask{
-    flex-basis: 47%;
-    min-height: 60px;
-   }
-   .doneTask{
-    flex-basis: 47%;
-    min-height: 60px;
-} */
+
     }
 
 @media screen and (max-width:1200px) {
@@ -89,60 +108,4 @@
            
         }
     }
-/* @media screen and (max-width:800px) {
-    .TaskList{
-        display: flex;
-      align-items: flex-start;
-    min-width: 600px;
-    font-size: 12px;
-    background-color: darkcyan;
-    flex-wrap: wrap; 
-    min-height: 300px;
-    justify-content: flex-start; 
-    
-    }
-    .activeTask{
-        flex-basis: 100%;  
-        background-color: yellow;   
-        height: 30px;
-    }
-    .doneTask{
-        flex-basis: 100%;
-        background-color: grey; 
-        height: 30px;
-    }
-    }
-
- @media screen and (max-width:640px) {
-    .TaskList{
-    min-width: 300px;
-    background-color: darkcyan;
-    flex-wrap: wrap;                  
-    }
-    .activeTask{
-        flex-basis: 100%;
-    }
-    .doneTask{
-        flex-basis: 100%;
-    }
-
-    } */
-       
-
-
-
- 
-
- /* .TaskList{
-    margin: 20px;
-    display: block;
-     
- }
-
- .active{
-     
-     margin: 10px;
-     
-     
-     
- } */ 
+ */

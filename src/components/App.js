@@ -2,6 +2,7 @@ import React from 'react';
 import AddTask from "./AddTask";
 import TaskList from './TaskList';
 import "./App.css";
+import {Container,Row,Col} from "react-bootstrap";
 
 
 class App extends React.Component {
@@ -75,12 +76,25 @@ class App extends React.Component {
    
   render() { 
     return (
-      <div className='App'>
-      <div className='title'>TO DO LIST</div>
-        <AddTask add={this.addTask}/>
-        <TaskList tasks={this.state.tasks} delete={this.deleteTask} changeStatus={this.changeStatus}/>
-      </div>
-    );
+      <Container className="App" fluid>
+        <Row>
+        <div className='title'>TO DO LIST</div>
+        </Row>
+        <Row>
+          <Col>
+          <AddTask add={this.addTask} className="AddTask"/>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+          <TaskList tasks={this.state.tasks} delete={this.deleteTask} changeStatus={this.changeStatus}/>
+          </Col>
+        </Row>
+            
+      
+     
+      </Container>
+    )
   }
 }
  
