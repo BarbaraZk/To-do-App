@@ -1,6 +1,6 @@
 import React from 'react';
 // import "./AddTask.css";
-import {Container,Row,Col,Button,Form,Image} from "react-bootstrap";
+import {Container,Row,Col,Button,Form} from "react-bootstrap";
 // import img2 from '../images/2.gif';
 
 class AddTask extends React.Component {
